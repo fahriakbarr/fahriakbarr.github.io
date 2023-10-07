@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Latihan Form</title>
+    </head>
+    <body>
+        <div id="container">
+            <form action="">
+                Nama : <input type="text" placeholder="isi nama kalian" name="data_nama" id="Data_nama">
+                Password : <input type="Password" placeholder="Password" name="data_pw" id="Data_pw">
+            </form>
+            <button onclick="TampilData()">Proses</button>
+        </div>
+        <div id="content">
+            <div id="Hasil_nama"></div>
+            <div id="Hasil_password"></div>
+        </div>
+        <script type="text/javascript">
+                function TampilData(){
+                    var nama = document.getElementById('Data_nama').value;
+                    var Password = document.getElementById('Data_pw').value;
+                    console.log(nama);
+                    console.log(Password);
+                    alert("Nama : " + nama + "\nPassword : " + Password)
+
+                    document.getElementById('Hasil_nama').innerHTML = nama;
+                    document.getElementById('Hasil_password').innerHTML = Password
+                }
+        </script>
+    </body>
+</html>
