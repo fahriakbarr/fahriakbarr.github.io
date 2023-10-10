@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Tugas form 1</title>
+    </head>
+    <body>
+        <div id="ui">
+            <table border="0">
+                <td>Nama</td>
+                <td> : </td>
+                <td><input type="text" placeholder="Masukkan Nama" id="Data_nama"></td>
+                <tr>
+                    <td>Umur</td>
+                    <td> : </td>
+                    <td><input type="number" placeholder="Masukkan Umur" id="Data_umur"></td>
+                </tr>
+                <tr>
+                    <td>Kelas</td>
+                    <td> : </td>
+                    <td><input type="text" placeholder="Masukkan kelas" id="Data_kelas"></td>
+                </tr>
+                <tr>
+                    <td>Hobi</td>
+                    <td> : </td>
+                    <td><input type="text" placeholder="Masukkan hobi" id="Data_hobi"></td>
+                </tr>
+                <td><button onclick="button()">Kirim</button></td>
+            </table>
+        </div>
+        <div id="Halaman">
+            <div id="/nama"></div>
+            <div id="/umur"></div>
+            <div id="/kelas"></div>
+            <div id="/hobi"></div>
+        </div>
+        <script type="text/javascript">
+            function button(){
+                var Nama = document.getElementById('Data_nama').value
+                var Umur = document.getElementById('Data_umur').value
+                var Kelas = document.getElementById('Data_kelas').value
+                var Hobi = document.getElementById('Data_hobi').value
+                console.log(Nama)
+                console.log(Umur)
+                console.log(Kelas)
+                console.log(Hobi)
+                
+                alert(
+                    "Nama : " + Nama + "\nUmur : " + Umur + "\nKelas : " + Kelas + "\nHobi : " + Hobi
+                )
+
+                document.getElementById('/nama').innerHTML = "Nama : " + Nama
+                document.getElementById('/umur').innerHTML = "Umur : " + Umur
+                document.getElementById('/kelas').innerHTML = "Kelas : " + Kelas
+                document.getElementById('/hobi').innerHTML = "Hobi : " + Hobi
+
+            }
+        </script>
+    </body>
+</html>

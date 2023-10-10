@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>Tugas Form 2</title>
+    </head>
+    <body>
+        <div id="ui">
+            <table>
+                <td>Bilangan Pertama</td>
+                <td> : </td>
+                <td><input type="number" id="Bilangan1"></td>
+                <tr>
+                    <td>Bilangan Kedua</td>
+                    <td> : </td>
+                    <td><input type="number" id="Bilangan2"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="tambah" onclick="tambah()">+</button>
+                        <Button id="kurang">-</Button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="kali">X</button>
+                        <button id="bagi">:</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="Halaman"></div>
+        <script type="text/javascript">
+            function tambah(){
+                var A = parseInt( document.getElementById( 'Bilangan1' ).value )
+                var B = parseInt( document.getElementById( 'Bilangan2' ).value )
+                var C = A+B
+
+                console.log( C ) 
+
+                alert( A + "+" + B + "=" + C )
+
+                document.getElementById( 'Halaman' ).innerHTML = A + "+" + B + "=" + C
+                
+            }
+
+            function kurang(){
+                var A = document.getElementById( 'Bilangan1' ).value
+                var B = document.getElementById( 'Bilangan2' ).value
+                var C = A-B
+
+                console.log( C )
+
+                alert( A + "-" + B + "=" + C )
+
+                document.getElementById( 'Halaman' ).innerHTML = A + "-" + B + "=" + C
+
+            }
+
+            function kali(){
+                var A = document.getElementById( 'Bilangan1' ).value
+                var B = document.getElementById( 'Bilangan2' ).value
+                var C = A*B
+
+                console.log( C )
+
+                alert( A + "X" + B + "=" + C )
+
+                document.getElementById( 'Halaman' ).innerHTML = A + "X" + B + "=" + C
+
+            }
+
+            function bagi(){
+                var A = document.getElementById( 'Bilangan1' ).value
+                var B = document.getElementById( 'Bilangan2' ).value
+                var C = A/B
+
+                console.log( C )
+
+                alert( A + ":" + B + "=" + C)
+
+                document.getElementById( 'Halaman' ).innerHTML = A + ":" + B + "=" + C
+
+            }
+        </script>
+    </body>
+</html>
