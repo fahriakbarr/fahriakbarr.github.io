@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Contact</title>
+    </head>
+    <body>
+        <table border="1">
+            <tr>
+                <th style="padding-left:100px; padding-right: 100px;"><a href="home.html">Home</a></th>
+                <th style="padding-left:100px; padding-right: 100px;"><a href="Galery.html">Galery</a></th>
+                <th style="padding-left:100px; padding-right: 100px;"><a href="aboutme.html">About Me</a></th>
+                <th style="padding-left:100px; padding-right: 100px;"><a href="contact.html">Contact</a></th>
+                <th style="padding-left:100px; padding-right: 100px;"><a href="myclass.html">My Class</a></th>
+            </tr>
+      </table>
+      <br>
+        <h1>Contact Me</h1>
+        <table>
+            <tr>
+                <td>Nama</td>
+                <td> : </td>
+                <td><input type="text" placeholder="Masukkan Nama" id="Nama"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td> : </td>
+                <td><input type="text" placeholder="Masukkan Email" id="Email"></td>
+            </tr>
+            <tr>
+                <td>Deskripsi</td>
+                <td> : </td>
+                <td><textarea cols="20" rows="4" placeholder="Masukkan Deskripsi" id="desc"></textarea></td>
+            </tr>
+            <tr>
+                <td><button onclick="button()">Kirim</button></td>
+            </tr>
+        </table>
+        <script type="text/javascript">
+            function button(){
+                var nama = document.getElementById('Nama').value
+                var email = document.getElementById('Email').value
+                var desk = document.getElementById('desc').value
+
+                alert("Nama : " + nama + "\nEmail : " + email + "\nDec : " + desk)
+            }
+        </script>
+    </body>
+</html>
