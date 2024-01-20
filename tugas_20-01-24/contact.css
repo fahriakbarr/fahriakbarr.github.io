@@ -1,7 +1,6 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: gray;
 }
 
 nav{
@@ -20,13 +19,13 @@ nav a{
     margin-right: 40px;
 }
 
-h1{
+/* h1{
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: flex;
     justify-content: center;
     margin-top: 70px;
-}
+} */
 
 .content input,textarea{
     border-radius: 5px;
@@ -37,6 +36,7 @@ h1{
 .content{
     width: fit-content;
     position: relative;
-    left: 68vh;
+    left: 63vh;
     top: 10vh;
+    padding: 30px;
 }
