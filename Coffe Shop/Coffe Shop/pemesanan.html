@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan Kopi</title>
+    <link rel="stylesheet" href="pemesanan.css">
+</head>
+<body>
+    <header>
+        <h1>Kedai Kopi</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="pemesanan.html">Order</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <form id="order-form">
+            <div class="form-group">
+                <label for="coffee-type">Jenis Minuman:</label>
+                <select id="coffee-type">
+                    <option value="pilihlah jenis Minuman"></option>
+                    <option value="espresso">Espresso</option>
+                    <option value="latte">Latte</option>
+                    <option value="cappuccino">Cappuccino</option>
+                    <option value="americano">Americano</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="size">Ukuran Gelas:</label>
+                <input type="radio" id="small" name="size" value="small">
+                <label for="small">Kecil</label>
+                <input type="radio" id="medium" name="size" value="medium">
+                <label for="medium">Sedang</label>
+                <input type="radio" id="large" name="size" value="large">
+                <label for="large">Besar</label>
+            </div>
+            <div class="form-group">
+                <label for="coffee-type">Plihan Toping:</label>
+                <select id="coffee-type">
+                    <option value="pilihlah toping Minuman"></option>
+                    <option value="oreo">Oreo</option>
+                    <option value="Susu">Susu</option>
+                    <option value="Boba">Boba</option>
+                    <option value="Jelly">Jelly</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Jumlah Gelas:</label>
+                <input type="number" id="quantity" name="quantity" min="1">
+            </div>
+
+            <div class="form-group">
+                <label for="total">Total Harga:</label>
+                <span id="total">-</span> <!-- Total harga akan ditampilkan di sini -->
+            </div>
+            <button type="submit">Pesan</button>
+        </form>
+    </div>
+
+    <script src="pemesanan.js"></script>
+</body>
+</html>
